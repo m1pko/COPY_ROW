@@ -100,7 +100,7 @@ function copyRow(rowNumber) {
   
   //get the row
   var refCell = "A"+rowNumber;
-  var refColumn = columnToLetter(columnCount) + columnCount;
+  var refColumn = columnToLetter(columnCount+1);
   var row = sourceSheet.getRange(refCell + ":" + refColumn).getValues();
   
   //destiny sheet
