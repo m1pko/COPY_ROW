@@ -79,8 +79,8 @@ function requestRowNumber() {
   var button = result.getSelectedButton();
   var text = result.getResponseText();
   
-  //test if input is a positive integer greater than 1
-  var regExp = new RegExp("([2-9])|([1-9]+[0-9]*)"); // "i" is for case insensitive
+  //test if input is a positive integer greater or equal than 1
+  var regExp = new RegExp("[1-9]+[0-9]*"); // "i" is for case insensitive
   var rowNumber = regExp.exec(text);
   
   if (rowNumber == null) {
